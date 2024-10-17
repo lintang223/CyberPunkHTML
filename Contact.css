@@ -1,0 +1,58 @@
+@font-face {
+    font-family: myFont;
+    src: url(Rovelink.otf);
+}*
+
+{
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+}
+
+.banner{
+    background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100%);
+    background-size: cover;
+    height: 100vh;
+}
+
+.ig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    color: #54c1e6;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid 	#39c4b6;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+span {
+    background: 	#39c4b6;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+button:hover span{
+    width: 100%;
+}
